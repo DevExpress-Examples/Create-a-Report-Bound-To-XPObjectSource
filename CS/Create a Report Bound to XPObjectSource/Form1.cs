@@ -24,14 +24,11 @@ namespace Create_a_Report_Bound_to_XPObjectSource {
         }
 
         private XPObjectSource CreateDataSource() {
-            ReflectionDictionary dictionary = new ReflectionDictionary();
-            XPClassInfo classInfo = dictionary.QueryClassInfo(typeof(Products));
-            XPObjectSource dataSource = new XPObjectSource() {
-                ConnectionStringName = "nwind",
-                EntityType = classInfo
-            };
-
-            return dataSource;
+			XPObjectSource dataSource = new XPObjectSource() {
+				ConnectionStringName = "nwind"
+			};
+			dataSource.SetEntityType(typeof(Products));
+			return dataSource;
         }
 
         private XtraReport CreateReport() {
