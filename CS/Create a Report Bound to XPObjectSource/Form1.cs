@@ -32,22 +32,17 @@ namespace Create_a_Report_Bound_to_XPObjectSource {
         }
 
         private XtraReport CreateReport() {
-            XtraReport report = new XtraReport {
-                Bands = {
-                    new DetailBand {
-                        Controls = {
-                            new XRLabel {
-                                ExpressionBindings = {
-                                    new ExpressionBinding("BeforePrint", "Text", "[ProductName]")
-                                },
-                                WidthF = 300
-                            }
-                        },
-                        HeightF = 50
-                    }
-                },
-                DataSource = CreateDataSource()
-            };
+            XtraReport report = new XtraReport();
+            DetailBand DetailBand = new DetailBand();
+            DetailBand.HeightF = 50;
+
+            XRLabel XRLabel = new XRLabel();
+            XRLabel.WidthF = 300;
+            XRLabel.ExpressionBindings.Add(new ExpressionBinding("BeforePrint", "Text", "[ProductName]"));
+
+            DetailBand.Controls.Add(XRLabel);
+            report.Bands.Add(DetailBand);
+            report.DataSource = CreateDataSource();
             return report;
         }
 
