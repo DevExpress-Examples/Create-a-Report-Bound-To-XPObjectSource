@@ -48,24 +48,24 @@ Namespace Create_a_Report_Bound_to_XPObjectSource.nwind
 				SetPropertyValue(Of String)(NameOf(Description), fDescription, value)
 			End Set
 		End Property
-		Private fIcon_17() As Byte
+		Private fIcon17() As Byte
 		<Size(SizeAttribute.Unlimited), MemberDesignTimeVisibility(True)>
-		Public Property Icon_17() As Byte()
+		Public Property Icon17() As Byte()
 			Get
-				Return fIcon_17
+				Return fIcon17
 			End Get
 			Set(ByVal value As Byte())
-				SetPropertyValue(Of Byte())(NameOf(Icon_17), fIcon_17, value)
+				SetPropertyValue(Of Byte())(NameOf(Icon17), fIcon17, value)
 			End Set
 		End Property
-		Private fIcon_25() As Byte
+		Private fIcon25() As Byte
 		<Size(SizeAttribute.Unlimited), MemberDesignTimeVisibility(True)>
-		Public Property Icon_25() As Byte()
+		Public Property Icon25() As Byte()
 			Get
-				Return fIcon_25
+				Return fIcon25
 			End Get
 			Set(ByVal value As Byte())
-				SetPropertyValue(Of Byte())(NameOf(Icon_25), fIcon_25, value)
+				SetPropertyValue(Of Byte())(NameOf(Icon25), fIcon25, value)
 			End Set
 		End Property
 		Private fPicture() As Byte

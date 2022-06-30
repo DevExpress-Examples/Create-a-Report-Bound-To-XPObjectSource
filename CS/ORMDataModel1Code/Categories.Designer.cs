@@ -35,19 +35,19 @@ namespace Create_a_Report_Bound_to_XPObjectSource.nwind {
             get { return fDescription; }
             set { SetPropertyValue<string>(nameof(Description), ref fDescription, value); }
         }
-        byte[] fIcon_17;
+        byte[] fIcon17;
         [Size(SizeAttribute.Unlimited)]
         [MemberDesignTimeVisibility(true)]
-        public byte[] Icon_17 {
-            get { return fIcon_17; }
-            set { SetPropertyValue<byte[]>(nameof(Icon_17), ref fIcon_17, value); }
+        public byte[] Icon17 {
+            get { return fIcon17; }
+            set { SetPropertyValue<byte[]>(nameof(Icon17), ref fIcon17, value); }
         }
-        byte[] fIcon_25;
+        byte[] fIcon25;
         [Size(SizeAttribute.Unlimited)]
         [MemberDesignTimeVisibility(true)]
-        public byte[] Icon_25 {
-            get { return fIcon_25; }
-            set { SetPropertyValue<byte[]>(nameof(Icon_25), ref fIcon_25, value); }
+        public byte[] Icon25 {
+            get { return fIcon25; }
+            set { SetPropertyValue<byte[]>(nameof(Icon25), ref fIcon25, value); }
         }
         byte[] fPicture;
         [Size(SizeAttribute.Unlimited)]

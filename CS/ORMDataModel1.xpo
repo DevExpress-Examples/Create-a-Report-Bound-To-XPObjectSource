@@ -14,10 +14,10 @@
             <field Id="b843bf16-eec3-465d-8acb-9db351683c6c" name="Description" persistent="Description" virtualColumnType="String" delayedUpdateModifiedOnly="false" size="Unlimited" />
           </generalXpObjectHasFields>
           <generalXpObjectHasFields Id="9563667f-d8fe-45f2-91b2-6068c080172b">
-            <field Id="446568af-53dd-455d-9038-8955d7f6f920" name="Icon_17" columnType="ByteArray" persistent="Icon_17" virtualColumnType="ByteArray" delayedUpdateModifiedOnly="false" size="Unlimited" />
+            <field Id="446568af-53dd-455d-9038-8955d7f6f920" name="Icon17" columnType="ByteArray" persistent="Icon17" virtualColumnType="ByteArray" delayedUpdateModifiedOnly="false" size="Unlimited" />
           </generalXpObjectHasFields>
           <generalXpObjectHasFields Id="be6a2ee6-2f88-45e7-b9a6-ae4c04e315b1">
-            <field Id="4a3565c3-3db5-4a6d-9aec-b5ad20be8481" name="Icon_25" columnType="ByteArray" persistent="Icon_25" virtualColumnType="ByteArray" delayedUpdateModifiedOnly="false" size="Unlimited" />
+            <field Id="4a3565c3-3db5-4a6d-9aec-b5ad20be8481" name="Icon25" columnType="ByteArray" persistent="Icon25" virtualColumnType="ByteArray" delayedUpdateModifiedOnly="false" size="Unlimited" />
           </generalXpObjectHasFields>
           <generalXpObjectHasFields Id="471234bb-57f8-4b39-a65f-0760c7fe819a">
             <field Id="da28e106-0bae-45d6-9218-8d67e4c87add" name="Picture" columnType="ByteArray" persistent="Picture" virtualColumnType="ByteArray" delayedUpdateModifiedOnly="false" size="Unlimited" />
