@@ -12,3 +12,8 @@ You can use [XPO](https://www.devexpress.com/products/net/orm/) to retrieve data
 - You can [create the **XPObjectSource** component and bind a report to it at runtime](https://docs.devexpress.com/XtraReports/400276).
 
 - You can [provide a custom connection for the **XPObjectSource** component at runtime](https://docs.devexpress.com/XtraReports/400285).
+
+## Documentation
+
+* [Bind a Report to an XPO Persistent Object](https://docs.devexpress.com/XtraReports/400276)
+* [Handle Database Connection Dynamically](https://docs.devexpress.com/XtraReports/400285/)
