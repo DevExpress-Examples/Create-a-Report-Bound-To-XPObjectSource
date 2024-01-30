@@ -1,5 +1,7 @@
-﻿Namespace Create_a_Report_Bound_to_XPObjectSource
-    Partial Public Class Form1
+Namespace Create_a_Report_Bound_to_XPObjectSource
+
+    Partial Class Form1
+
         ''' <summary>
         ''' Required designer variable.
         ''' </summary>
@@ -10,14 +12,14 @@
         ''' </summary>
         ''' <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
         Protected Overrides Sub Dispose(ByVal disposing As Boolean)
-            If disposing AndAlso (components IsNot Nothing) Then
-                components.Dispose()
+            If disposing AndAlso (Me.components IsNot Nothing) Then
+                Me.components.Dispose()
             End If
+
             MyBase.Dispose(disposing)
         End Sub
 
-        #Region "Windows Form Designer generated code"
-
+#Region "Windows Form Designer generated code"
         ''' <summary>
         ''' Required method for Designer support - do not modify
         ''' the contents of this method with the code editor.
@@ -36,6 +38,7 @@
             Me.simpleButton1.Size = New System.Drawing.Size(186, 23)
             Me.simpleButton1.TabIndex = 0
             Me.simpleButton1.Text = "Show Print Preview"
+            AddHandler Me.simpleButton1.Click, New System.EventHandler(AddressOf Me.simpleButton1_Click)
             ' 
             ' simpleButton2
             ' 
@@ -44,6 +47,7 @@
             Me.simpleButton2.Size = New System.Drawing.Size(186, 23)
             Me.simpleButton2.TabIndex = 1
             Me.simpleButton2.Text = "Run Report Designer"
+            AddHandler Me.simpleButton2.Click, New System.EventHandler(AddressOf Me.simpleButton2_Click)
             ' 
             ' simpleButton3
             ' 
@@ -52,6 +56,7 @@
             Me.simpleButton3.Size = New System.Drawing.Size(186, 23)
             Me.simpleButton3.TabIndex = 2
             Me.simpleButton3.Text = "Create XPObjectSource Dynamically"
+            AddHandler Me.simpleButton3.Click, New System.EventHandler(AddressOf Me.simpleButton3_Click)
             ' 
             ' simpleButton4
             ' 
@@ -60,6 +65,7 @@
             Me.simpleButton4.Size = New System.Drawing.Size(186, 23)
             Me.simpleButton4.TabIndex = 3
             Me.simpleButton4.Text = "Resolve/Dismiss Session"
+            AddHandler Me.simpleButton4.Click, New System.EventHandler(AddressOf Me.simpleButton4_Click)
             ' 
             ' Form1
             ' 
@@ -72,16 +78,17 @@
             Me.Controls.Add(Me.simpleButton1)
             Me.Name = "Form1"
             Me.Text = "Form1"
+            AddHandler Me.Click, New System.EventHandler(AddressOf Me.simpleButton1_Click)
             Me.ResumeLayout(False)
-
         End Sub
 
-        #End Region
+#End Region
+        Private simpleButton1 As DevExpress.XtraEditors.SimpleButton
 
-        Private WithEvents simpleButton1 As DevExpress.XtraEditors.SimpleButton
-        Private WithEvents simpleButton2 As DevExpress.XtraEditors.SimpleButton
-        Private WithEvents simpleButton3 As DevExpress.XtraEditors.SimpleButton
-        Private WithEvents simpleButton4 As DevExpress.XtraEditors.SimpleButton
+        Private simpleButton2 As DevExpress.XtraEditors.SimpleButton
+
+        Private simpleButton3 As DevExpress.XtraEditors.SimpleButton
+
+        Private simpleButton4 As DevExpress.XtraEditors.SimpleButton
     End Class
 End Namespace
-
